@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <title>Mi primer pagina web en la nube</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+<body>
+
+    <img id="rocket" src="./img/rocket.jpg" alt="rocket image">
+    <!-- script to change image-->
+
+    <script>
+        function changeImage(){
+            let displayImage = document.getElementById('rocket')
+            if (displayImage.src.match('./rocket.jpg')){
+                displayImage.src = './carnita.jpg'
+            } else {
+                displayImage.src = './rocket.jpg'
+            }
+        }
+    </script>
+</body>
+</html>
