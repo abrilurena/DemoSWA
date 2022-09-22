@@ -1,2 +1,3 @@
-# DemoSWA
-Demo para clase con Azure Static Web Apps
+# Sube tu primer carnita asada a la Nube
+
+Demo para clase en la UANL con Azure Static Web Apps
