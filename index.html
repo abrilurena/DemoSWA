@@ -1,25 +1,96 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width= device-width, initial-scale=1">
-        <title>Mi primer pagina web en la nube</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-<body>
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
 
-    <img id="rocket" src="./img/rocket.jpg" alt="rocket image">
-    <!-- script to change image-->
+        .header {
+            text-align: center;
+        }
 
-    <script>
-        function changeImage(){
-            let displayImage = document.getElementById('rocket')
-            if (displayImage.src.match('./rocket.jpg')){
-                displayImage.src = './carnita.jpg'
-            } else {
-                displayImage.src = './rocket.jpg'
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            width: 30%;
+        }
+
+        .job,
+        .school,
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .job h3,
+        .school h3,
+        .skill h3 {
+            margin: 0;
+        }
+
+        .job p,
+        .school p,
+        .skill p {
+            margin: 0;
+        }
+
+        /* make it single column for mobile */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .section {
+                width: 100%;
             }
         }
-    </script>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Resume</h1>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Job Title</h3>
+                    <p>Job Description</p>
+                </div>
+                <div class="job">
+                    <h3>Job Title</h3>
+                    <p>Job Description</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <div class="school">
+                    <h3>School Name</h3>
+                    <p>School Description</p>
+                </div>
+                <div class="school">
+                    <h3>School Name</h3>
+                    <p>School Description</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>Skill Name</h3>
+                    <p>Skill Description</p>
+                </div>
+                <div class="skill">
+                    <h3>Skill Name</h3>
+                    <p>Skill Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
