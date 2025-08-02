@@ -6,4 +6,4 @@ Este repositorio lo puedes utilizar para hacer tus pruebas con Azure Static Web 
 
 Puedes modificar el archivo de index.html como mejor te guste :)
 
-> Si utilizas este proyecto, ¡comparte tus resultados en redes sociales y etiquetanos @azureadvocates! 
+> Si utilizas este proyecto, ¡comparte tus resultados en redes sociales y etiquetame en @abrildaur!
